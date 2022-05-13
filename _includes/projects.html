@@ -7,7 +7,13 @@
     {% for project in site.data.projects %}
         {% if project.category == page.title %}
             <div id = "project">
-				<img src = "{{ project.img }}">
+				{% if project.img == "" %}
+					<div class = "no-img">
+						{{ project.name }}
+					</div>
+				{% else %}
+					<img src = "{{ project.img }}">
+				{% endif %}
 				<a href = "{{ project.link }}">
 					<i class = "fas fa-info" aria-hidden = "true"></i>
 				</a>
