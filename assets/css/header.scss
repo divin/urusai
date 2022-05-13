@@ -1,0 +1,53 @@
+---
+---
+
+// Style of the header for all pages
+
+@import 'colors';
+
+header {
+	// Flex Item
+	flex: 1 1 10%;
+
+	// Flex
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+
+	// Color
+	background-color: $background-2;
+
+	// Position
+	top: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 10;
+	position: sticky;
+
+	// Size
+	width: 100%;
+	max-height: 96px;
+
+	// Text
+	font-size: 1.5em;
+	text-align: center;
+	color: $font-color-0;
+
+	#title {
+		// Flex
+		flex: 0 0 50%;
+		display: flex;
+		font-weight: 550;
+		color: $font-color-0;
+		justify-content: flex-end;
+	}
+		
+	#current {
+		flex: 1 0 auto;
+		display: flex;
+		text-align: center;
+		justify-content: flex-start;
+	}
+}

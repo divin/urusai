@@ -1,0 +1,65 @@
+---
+---
+
+// Main style for the content
+
+@import 'colors';
+
+main {
+	// Flex Item
+	flex: 1 1 80%;
+
+	// Flex
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	// Size
+	width: 100%;
+
+	// Color
+	background: $background-1;
+	background: linear-gradient(to top, $background-2 0%, $background-1 50%, $background-2 100%);
+}
+
+.section {
+
+	// Flex Item
+	flex: 1 1 auto;
+
+	// Flex
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	// Size
+	height: 95vh;
+	//height: 100%;
+	width: 100%;
+	
+	// Align
+	margin: 0;
+	padding: 0;
+	z-index: 0;
+	text-align: center;
+}
+
+#contact {
+	height: 80vh;
+}
+
+#e404 {
+	height: 75vh;
+
+	a {
+		padding: 0.5em;
+		font-size: 1em;
+		border-radius: 1em;
+		color: $font-color-0;
+		background-color: $green;
+	}
+}

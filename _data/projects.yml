@@ -1,0 +1,30 @@
+# All current projects
+# name: name of the project
+# category: in which section the project belongs
+# markdown: the markdown file with the projects description (located at _sections/projects)
+# icon-types:
+#   * info: "fas fa-info"
+#   * play: "fas fa-play"
+#   * download: "fas fa-download"
+
+
+- name: "Space Odyssey"
+  category: games
+  markdown: REC01.md
+  link: "/project"
+  icon: "fas fa-info"
+  img: "assets/images/cover.jpg"
+
+- name: "Random Number Generator"
+  category: games
+  markdown: RNG.md
+  link: "/"
+  icon: "fas fa-info"
+  img: "assets/images/cover.jpg"
+
+- name: "OL-DI"
+  category: other
+  markdown: OL-DI.md
+  link: "/"
+  icon: "fas fa-info"
+  img: "assets/images/cover.jpg"

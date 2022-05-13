@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang = "en-US">
+
+	{% include head.html %}
+	<link rel = "stylesheet" property = "stylesheet" href = "assets/css/default.css">
+	<link rel = "stylesheet" property = "stylesheet" href = "assets/css/project.css">
+
+	<body>
+		<div class = "container">
+			{% include header.html %}
+			
+			<h1>{{ page.project }}</h1>
+			<div class = "content">
+				{{ content }}
+			</div>
+	
+			{% include footer.html %}
+		</div>
+	</body>
+
+</html>

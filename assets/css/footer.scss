@@ -1,0 +1,27 @@
+---
+---
+
+// Style of the footer for all pages
+
+@import 'colors';
+
+footer {
+	// Size
+	width: 100%;
+	max-height: 96px;
+
+	// Flex Item
+	flex: 0 1 10%;
+
+	// Flex
+	gap: 0;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+
+	// Color
+	color: $font-color-0;
+	background-color: $background-2;
+}

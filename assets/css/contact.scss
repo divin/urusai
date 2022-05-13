@@ -1,0 +1,76 @@
+---
+---
+
+@import 'colors';
+
+.contact {
+
+	// Flex
+	display: flex;
+	align-items: stretch;
+	flex-direction: column;
+	justify-content: center;
+
+	// Size
+	width: 80%;
+	height: 80%;
+	padding: 1em;
+
+	// Text
+	text-align: center;
+
+	p {
+		font-weight: 450;
+	}
+
+	form {
+
+		// Flex
+		gap: 0.5em;
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: stretch;
+		flex-direction: column;
+		align-content: stretch;
+		justify-content: center;
+
+		// Size
+		height: 80%;
+		padding: 1em;
+
+		button {
+			// Flex
+			flex: 0 1 auto;
+			align-self: center;
+
+			// Self
+			border: none;
+			font-size: 1em;
+			border-radius: 1em;
+			color: $font-color-0;
+			background-color: $green;
+		}
+
+		input {
+			// Flex
+			flex: 1 1 auto;
+
+			text-align: center;
+
+			// Border
+			border-width: 0.1em;
+			border-radius: 0.5em;
+			border-color: $background-2;
+		}
+
+		textarea {
+			flex: 1 1 50%;
+			text-align: center;
+
+			// Border
+			border-width: 0.1em;
+			border-radius: 0.5em;
+			border-color: $background-2;
+		}
+	}
+}

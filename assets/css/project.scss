@@ -1,0 +1,24 @@
+---
+---
+
+// Style for a project page
+
+@import 'colors';
+
+.content {
+
+	// Flex Item
+	flex: 1 1 80%;
+
+	// Size
+	width: 100%;
+	//height: 95vh;
+
+	// Color
+	background: $background-1;
+	background: linear-gradient(to top, $background-2 0%, $background-1 50%, $background-2 100%);
+
+	p {
+		padding: 1em;
+	}
+}

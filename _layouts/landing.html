@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang = "en-US">
+
+	{% include head.html %}
+	<link rel = "stylesheet" property = "stylesheet" href = "assets/css/default.css">
+	<link rel = "stylesheet" property = "stylesheet" href = "assets/css/landing.css">
+
+	<body>
+		<div class = "landing-box">
+
+			<!-- Image -->
+			<div class = "image-container">
+				<img src = "{{ page.image }}">
+			</div>
+
+			<!-- Informations -->
+			<div class = "info">
+				{{ content }}
+			</div>
+
+			<!-- Main page button -->
+			<div class = "button-container">
+				<a href = "/main">Find Out More</a>
+			</div>
+
+			{% include social-media.html %}
+			{% include site-end.html %}
+		</div>
+	</body>
+
+</html>

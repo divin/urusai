@@ -1,0 +1,18 @@
+<!-- Projects element -->
+<!-- Will be included in each section (located at _sections/) to load the current projects -->
+
+<link rel = "stylesheet" property = "stylesheet" href = "assets/css/projects.css">
+
+<div id = "projects">
+    {% for project in site.data.projects %}
+        {% if project.category == page.title %}
+            <div id = "project">
+				<!-- <h1>{{ project.name }}</h1> -->
+				<img src = "{{ project.img }}">
+				<a href = "{{ project.link }}">
+					<i class = "{{ project.icon }}" aria-hidden = "true"></i>
+				</a>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
