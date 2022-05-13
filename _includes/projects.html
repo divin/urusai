@@ -8,15 +8,15 @@
         {% if project.category == page.title %}
             <div id = "project">
 				{% if project.img == "" %}
-					<div class = "no-img">
+					<a class = "no-img" href = "{{ project.link }}">
 						{{ project.name }}
-					</div>
+					</a>
 				{% else %}
 					<img src = "{{ project.img }}">
+					<a href = "{{ project.link }}">
+						<i class = "fas fa-info" aria-hidden = "true"></i>
+					</a>
 				{% endif %}
-				<a href = "{{ project.link }}">
-					<i class = "fas fa-info" aria-hidden = "true"></i>
-				</a>
             </div>
         {% endif %}
     {% endfor %}
