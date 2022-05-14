@@ -57,12 +57,16 @@
 	}
 
 	a {
+		// Flex
 		flex: 1 1 10%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border-radius: 0 0 1em 1em;
+		
+		// Color
+		color: $font-color-1;
 		background-color: $green;
+		border-radius: 0 0 1em 1em;
 
 		&:hover {
 			color: $font-color-0;
