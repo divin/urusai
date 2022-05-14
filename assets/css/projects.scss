@@ -55,7 +55,10 @@
 
 	.img {
 		flex: 1 1 auto;
-		max-width: 100%;
-		border-radius: 1em 1em 1em 1em;
+
+		img {
+			max-width: 100%;
+			border-radius: 1em 1em 1em 1em;
+		}
 	}
 }
