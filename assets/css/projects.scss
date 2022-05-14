@@ -47,28 +47,15 @@
 		font-weight: 500;
 		background-color: $green;
 		border-radius: 1em 1em 1em 1em;
-	}
-
-	img {
-		flex: 1 1 auto;
-		max-width: 100%;
-		border-radius: 1em 1em 0 0;
-	}
-
-	a {
-		// Flex
-		flex: 1 1 10%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		
-		// Color
-		color: $font-color-1;
-		background-color: $green;
-		border-radius: 0 0 1em 1em;
 
 		&:hover {
 			color: $font-color-0;
 		}
+	}
+
+	.img {
+		flex: 1 1 auto;
+		max-width: 100%;
+		border-radius: 1em 1em 1em 1em;
 	}
 }
