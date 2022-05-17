@@ -44,8 +44,9 @@
 
 		button {
 			// Flex
-			flex: 1 1 10%;
+			flex: 1 1 auto;
 			align-self: center;
+			max-height: 2em;
 
 			// Self
 			border: none;
@@ -57,7 +58,8 @@
 
 		input {
 			// Flex
-			flex: 1 1 10%;
+			flex: 1 1 auto;
+			max-height: 2em;
 
 			// Border
 			border-width: 0.1em;
