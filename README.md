@@ -6,5 +6,5 @@ Written by myself, using Jekyll, HTML, CSS (SASS) and Javascript. You might be a
 plugins:
   - jekyll-remote-theme
  
-remote_theme: divin/Urusai
+remote_theme: divin/urusai
 ```
