@@ -11,6 +11,8 @@ spline-url: ""
 # Image path
 image-url: ""
 
+formsubmit-url: ""
+
 # Build settings
 markdown: kramdown
 sass:
