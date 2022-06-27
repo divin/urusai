@@ -4,8 +4,8 @@
 @import "color";
 @import "animation";
 
-// Informations
-main {
+// Image
+.image-container {
 
 	// Flex-Item
 	flex: 1 1 auto;
@@ -13,20 +13,15 @@ main {
 	// Flex
 	display: flex;
 	align-items: center;
-	align-content: center;
 	justify-content: center;
 	flex-direction: column;
 
-	// Size
-	width: 100%;
+	width: 50%;
 
-	h1 {
-		font-size: 1.5rem;
-	}
-
-	p {
-		font-size: 1rem;
-		margin-top: -0.5rem;
-		text-align: center;
+	img {
+		max-width: 100%;
+  		max-height:100%;
+		border-radius: 1em;
+		vertical-align: middle;
 	}
 }

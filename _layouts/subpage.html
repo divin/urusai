@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang = "{{ site.lang | default: "en-US" }}">
+	
+	<!-- Add head with meta data and default stylesheet -->
+	{% include head.html %}
+	
+	<body class = "subpage-container">
+
+		<!-- Add header -->
+		{% include header.html %}
+
+		<!-- Add content -->
+		{% include main.html %}
+		
+		<!-- Add footer -->
+		{% include footer.html %}
+  	
+	</body>
+
+</html>

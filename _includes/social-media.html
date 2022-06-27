@@ -1,13 +1,14 @@
 <!-- Social-media links -->
 
-<link rel = "stylesheet" property = "stylesheet" href = "assets/css/social-media.css">
-<link rel = "stylesheet" property = "stylesheet" href = "assets/fontawesome/css/all.css">
+<link rel = "stylesheet" property = "stylesheet" href = "{{ 'assets/css/social-media.css' | relative_url }}">
+<link rel = "stylesheet" property = "stylesheet" href = "{{ 'assets/fontawesome/css/all.css' | relative_url }}">
 
 <div class = "social-media">
 	<ul>
-		{% for social in site.data.social %}
+		<!-- Loop through all social media accounts -->
+		{% for social in site.social-media %}
 			<li>
-				<a href = "{{ social.url }}">
+				<a href = "{{ social.url }}" target = "_blank" rel = "noopener noreferrer">
 					<i class = "{{ social.icon }}" aria-hidden = "true"></i>
 				</a>
 			</li>

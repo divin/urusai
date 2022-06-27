@@ -4,24 +4,22 @@
 @import "color";
 @import "animation";
 
-header {
+.spline-container {
 
 	// Flex-Item
-	flex: 0 1 10%;
+	flex: 1 1 auto;
 
 	// Flex
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
-	// Text
-	font-size: 1em;
-	text-align: center;
-
-	h1 {
-		color: $green;
-	}
-
+	flex-direction: column;
+	
 	// Size
 	width: 100%;
+	height: 100%;
+
+	iframe {
+		border-radius: 1em;
+	}
 }

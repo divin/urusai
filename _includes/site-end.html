@@ -1,9 +1,10 @@
 <!-- Site end -->
 
-<link rel = "stylesheet" property = "stylesheet" href = "assets/css/site-end.css">
+<link rel = "stylesheet" property = "stylesheet" href = "{{ 'assets/css/site-end.css' | relative_url }}">
 
 <div class = "site-end">
-	<a href = "/"><script>document.write(new Date().getFullYear())</script> © {{ site.name }}</a> |
-	<a href = "/privacy">{{ site.privacy }}</a> |
-	<a href = "/impress">{{ site.impress }}</a>
+	<a href = "/"><script>document.write(new Date().getFullYear())</script> © {{ site.site-end-name }}</a>
+	{% for link in site.site-end %}
+		| <a href = "{{ link.url }}">{{ link.text }}</a>
+	{% endfor %}
 </div>

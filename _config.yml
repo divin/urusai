@@ -1,22 +1,36 @@
-name: "Divin"
-title: "divin.work"
-description: >- # this means to ignore newlines until "baseurl:"
-  "My personal portfolio!"
-baseurl: ""
-url: "https://divin.work"
+name: "" # name of author
+baseurl: "/" # the subpath of your site, e.g. /blog
+title: "" # the name of your site, e.g. ACME Corp.
+site-end-name: "" # name which is shown at the site end ("YEAR © SITE-END-NAME")
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Variables
-privacy: "Terms & Privacy Policy" # Name of the "Terms & Privacy Policy" link (German: Datenschutzerklärung)
-impress: "Impress" # Name of the "Impress" link (German: Impressum)
+# Spline settings
+use-spline: true
+spline-url: ""
 
-# Projects
-collections:
-  - sections
+# Image path
+image-url: ""
 
 # Build settings
 markdown: kramdown
 sass:
     style: :compressed
+
+# List of social media accounts
+# name: Name of the platform
+# url: URL to the account
+# icon: fontawesome icon of the platform (https://fontawesome.com/v5/search)
+social-media:
+  - name: GitHub
+    url: https://github.com/divin
+    icon: fab fa-github
+
+# List of name & links for the site end
+site-end:
+  - text: "Terms & Privacy Policy"
+    url: "/privacy"
+  - text: Impress
+    url: "/impress"
 
 # Excluded items
 exclude:

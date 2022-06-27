@@ -3,7 +3,7 @@
 
 // Style of the footer for all pages
 
-@import 'colors';
+@import 'color';
 
 footer {
 	// Size
@@ -20,8 +20,4 @@ footer {
 	align-content: center;
 	justify-content: center;
 	flex-direction: column;
-
-	// Color
-	color: $font-color-0;
-	background-color: $background-2;
 }

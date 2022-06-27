@@ -1,8 +1,8 @@
 ---
 ---
 
-@import 'colors';
-@import 'animations';
+@import "color";
+@import "animation";
 
 html, body {
 
@@ -23,7 +23,7 @@ html, body {
 	font-weight: 400;
 	font-style: normal;
 	-webkit-font-smoothing: antialiased;
-	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 	letter-spacing: -0.022em;
 
 	a {
@@ -45,26 +45,50 @@ body {
 	-webkit-animation: fadein 2s; // Safari, Chrome and Opera > 12.1
 }
 
-.container {
-	// Center
-	margin: 0 auto;
+.default-container {
+	
+	// Center self
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
 
 	// Flex
 	display: flex;
-	flex-wrap: nowrap;
 	align-items: center;
-	align-content: stretch;
+	align-content: center;
 	flex-direction: column;
-	justify-content: flex-start;
-	overflow: auto;
+	justify-content: center;
 
 	// Size
-	width: 100%;
-	height: 100%;
-	min-width: 360px;
-	max-width: 640px;
+	width: 75%;
+	height: 85%;
+	padding: 2em;
+	min-width: 160px;
+	max-width: 720px;
+	min-height: 420px;
+	max-height: 640px;
+
+	// Box
+	border-radius: 1rem;
 
 	// Colors
-	background-color: $background-2;
+	background: $background-2;
+	background: linear-gradient(45deg, $background-2 0%, $background-1 50%);
+
+	// Shadow
 	box-shadow: rgba(0, 0, 0, 0.5) 0em 0.5em 1em;
+}
+
+.subpage-container {
+	
+	padding: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	
+	// Size
+	width: 75%;
+	height: 100%;
+	min-width: 160px;
+	max-width: 720px;
 }

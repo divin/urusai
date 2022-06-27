@@ -1,12 +1,12 @@
 ---
 ---
 
-@import 'colors';
+@import 'color';
 
 .social-media {
 
 	// Flex
-	flex: 1;
+	flex: 0 1 50%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;

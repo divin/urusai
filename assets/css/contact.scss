@@ -1,7 +1,7 @@
 ---
 ---
 
-@import 'colors';
+@import 'color';
 
 .contact {
 
@@ -12,9 +12,7 @@
 	justify-content: center;
 
 	// Size
-	width: 80%;
-	height: 80%;
-	padding: 1em;
+	height: 100%;
 
 	// Text
 	text-align: center;

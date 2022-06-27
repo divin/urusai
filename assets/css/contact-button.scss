@@ -1,0 +1,117 @@
+---
+---
+
+@import "color";
+@import "animation";
+
+// Button to the main page
+.button-container {
+
+	// Flex-Item
+	flex: 1 1 10%;
+
+	// Flex
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	// Size
+	width: 60%;
+
+	.button {
+		// Color
+		color: $font-color-1;
+		background-color: $green;
+	
+		// Size & form
+		width: 100%;
+		padding: 1em;
+		border-radius: 0.5em;
+	
+		// Text
+		font-size: 1em;
+		font-weight: bolder;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		text-transform: uppercase;
+	}
+
+}
+
+.modal-container {
+
+	// Center & put in front
+	top: 0;
+	left: 0;
+	z-index: 10;
+	position: fixed;
+
+	// Size
+	width: 100%;
+	height: 100%;
+
+	// Items
+	display: none;
+	align-items: center;
+	justify-content: center;
+
+	// Make background opaque
+	border-radius: 1em;
+	background-color: rgba(0, 0, 0, 0.6);
+
+	&:target {
+		display: flex;
+	}
+
+	.modal {
+
+		// Size
+		width: 75%;
+		height: 75%;
+		padding: 2em;
+
+		overflow: hidden;
+		position: relative;
+		border-radius: 1em;
+
+		// Background
+		background: $background-1;
+		background: linear-gradient(45deg, $background-2 0%, $background-1 50%);
+
+		// Fade-in
+		animation: fadein 0.5s;
+		
+		// Shadow
+		box-shadow: rgba(0, 0, 0, 0.5) 0.5em 0.5em 1em;
+	}
+
+	.close {
+
+		// Size
+		width: 1em;
+		height: 1em;
+
+		color: inherit;
+		font-size: 2em;
+
+		// Position
+		top: 1em;
+		right: 1em;
+		position: absolute;
+
+		// Animation time
+		transition: 0.2s;
+
+		&:before {
+			content: '×';
+			transform: translateY(-.1rem);
+		}
+
+		&:hover,
+		&:focus {
+			transform: translateY(-.2rem);
+		}
+	}
+}

@@ -1,0 +1,15 @@
+<link rel = "stylesheet" property = "stylesheet" href = "{{ 'assets/css/contact-button.css' | relative_url }}">
+
+<div class = "button-container" id = "modal-closed">
+	<a class = "button" href = "#modal-opened">Contact Me</a>
+</div>
+
+<div class = "modal-container" id = "modal-opened">
+	<div class = "modal">
+		
+		<a class = "close" href = "#modal-closed"></a>
+
+		{% include contact.html %}
+	
+	</div>
+</div>

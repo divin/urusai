@@ -1,17 +1,7 @@
 <!-- Main element -->
 
-<link rel = "stylesheet" property = "stylesheet" href = "assets/css/main.css">
+<link rel = "stylesheet" property = "stylesheet" href = "{{ 'assets/css/main.css' | relative_url }}">
 
 <main>
-	{% if page.title == "work" %}
-		{% for section in site.sections %}
-			{% if section.public %}
-				<div class = "section" id = "{{ section.title }}">
-					{{ section.content | markdownify }}
-				</div>
-			{% endif %}
-		{% endfor %}
-	{% else %}
-		{{ content }}
-	{% endif %}
+	{{ content }}
 </main>

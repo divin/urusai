@@ -1,17 +1,19 @@
 ---
 ---
 
-@import 'colors';
+@import 'color';
 
 .site-end {
-	width: 100%;
-	font-size: 0.9em;
 
 	// Flex
-	flex: 1;
+	flex: 0 1 50%;
 	gap: 0.25em;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+
+	// Size
+	width: 100%;
+	font-size: 0.9em;
 }

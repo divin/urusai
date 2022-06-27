@@ -1,8 +1,11 @@
 <!-- Header element -->
 
-<link rel = "stylesheet" property = "stylesheet" href = "assets/css/header.css">
+<link rel = "stylesheet" property = "stylesheet" href = "{{ 'assets/css/header.css' | relative_url }}">
 
-<header class = "header">
-	<a id = "title" href = "/">divin</a>
-	<div id = "current">.{{ page.title }}</div>
+<header>
+	<a id = "title" href = "/">
+		<h1>
+			{{ site.title }}
+		</h1>
+	</a>
 </header>

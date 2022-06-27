@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<!-- Default layout -->
 
-<html lang = "en-US">
-  
-{% include head.html %}
-  <link rel = "stylesheet" property = "stylesheet" href = "assets/css/default.css">
+<html lang="{{ site.lang | default: "en-US" }}">
+	
+	<!-- Add head with meta data and default stylesheet -->
+	{% include head.html %}
+	
+	<body class = "default-container">
 
-  <body>
-	<script src = "assets/js/script.js" defer></script>
-	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<div class = "container">
-		{% include header.html %}
+		{% if site.use-spline %}
+			<!-- Add spline -->
+			{% include spline.html %}
+		{% else %}
+			<!-- Add image -->
+			{% include image.html %}
+		{% endif %}
+
+		<!-- Add content -->
 		{% include main.html %}
+
+		<!-- Add contact -->
+		{% include contact-button.html %}
+
+		<!-- Add footer -->
 		{% include footer.html %}
-	</div>
-  </body>
+  	
+	</body>
 
 </html>
